@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Get-Ryze.ai – Website Redesign 🚀
 
-## Getting Started
+A modern, responsive redesign of the **Get-Ryze.ai** marketing website focused on improved visual appeal, user experience, and clarity of communication.
 
-First, run the development server:
+This project was completed as part of an **internship assignment**, demonstrating frontend engineering best practices, modular design, and scalable architecture.
 
-```bash
+---
+
+## 🔗 Live Demo
+
+👉 **Live Website:** https://get-ryze-redesign.vercel.app  
+👉 **GitHub Repository:** https://github.com/your-username/get-ryze-redesign
+
+*(Replace with your actual links)*
+
+---
+
+## 🎯 Objective
+
+Redesign the Get-Ryze.ai website to:
+- Clearly communicate the product’s value proposition
+- Improve layout, typography, and branding
+- Provide a smooth, intuitive user experience
+- Ensure responsiveness and accessibility
+- Use a modular, reusable component structure
+
+---
+
+## 🧠 About Ryze.ai (Concept)
+
+Ryze.ai is an **AI-powered platform that automates and optimizes paid advertising campaigns** across multiple platforms.  
+The redesigned website highlights:
+- AI-driven automation
+- Cross-platform ad optimization
+- Time and cost efficiency for businesses
+- Clear calls-to-action for conversions
+
+---
+
+## 🧱 Pages Implemented
+
+- **Homepage**
+  - Hero Section
+  - Features
+  - Testimonials
+  - Pricing
+  - Call-to-Action
+
+- **Features Page**
+  - Detailed overview of AI capabilities
+
+- **Pricing Page**
+  - Clear pricing tiers and value comparison
+
+---
+
+## 🧩 Modular Component Structure
+
+The project is organized into reusable, scalable components:
+
+components/
+├── layout/
+│ ├── Header.tsx
+│ └── Footer.tsx
+├── sections/
+│ ├── Hero.tsx
+│ ├── Features.tsx
+│ ├── Testimonials.tsx
+│ ├── Pricing.tsx
+│ └── CTA.tsx
+└── ui/
+├── Button.tsx
+└── Card.tsx
+
+
+---
+
+
+Each section is designed to be easily updated or reused in future pages.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Approach:** Component-based architecture
+- **Deployment:** Vercel
+
+---
+
+## 🎨 Design Decisions
+
+- **Modern & Clean UI:** Minimalist layout with ample whitespace
+- **Strong CTA Focus:** “Get Started” and “Book a Demo” placed strategically
+- **Mobile-First:** Fully responsive across all screen sizes
+- **Scalable Structure:** Easy to extend with additional pages or features
+
+---
+
+## 🚀 Getting Started Locally
+
+
+# Navigate to project folder
+cd get-ryze-redesign
+
+# Install dependencies
+npm install clsx
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Deploy: 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
