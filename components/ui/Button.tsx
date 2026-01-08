@@ -1,23 +1,21 @@
 // components/ui/Button.tsx
+import { ReactNode } from "react";
 import clsx from "clsx";
 
-export default function Button({
-  children,
-  variant = "primary",
-}: {
-  children: React.ReactNode;
+interface ButtonProps {
+  children: ReactNode;
   variant?: "primary" | "outline";
-}) {
-  return (
-    <button
-      className={clsx(
-        "px-6 py-3 rounded-lg font-medium transition",
-        variant === "primary"
-          ? "bg-indigo-600 text-white hover:bg-indigo-700"
-          : "border border-gray-300 hover:bg-gray-100"
-      )}
-    >
-      {children}
-    </button>
-  );
+  className?: string; // ✅ Make className optional
+}
+
+export default function Button({ children, variant, className }: ButtonProps) {
+  const base =
+    "px-6 py-3 rounded-md font-semibold text-center transition-colors duration-200";
+
+  const styles =
+    variant === "outline"
+      ? "border border-indigo-600 text-indigo-600 bg-white hover:bg-indigo-50"
+      : "bg-indigo-600 text-white hover:bg-indigo-700";
+
+  return <button className={clsx(base, styles, className)}>{children}</button>;
 }
